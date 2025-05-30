@@ -2,26 +2,20 @@ using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
+    [SerializeField] float speed = 5f;
     Rigidbody2D _rb;
     Vector2 _target;
-    float speed = 5f;
     bool _isMoving = false;
 
-    void Start()
+    void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    public void MoveTo(Vector2 target)
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Converte la posizione del mouse da schermo a mondo
-            Vector3 mouseScreenPos = Input.mousePosition;
-            Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPos);
-            _target = new Vector2(mouseWorldPosition.x, mouseWorldPosition.y);
-            _isMoving = true;
-        }
+        _target = target;
+        _isMoving = true;
     }
 
     void FixedUpdate()
@@ -30,10 +24,8 @@ public class TopDownMovement : MonoBehaviour
         {
             Vector2 currentPosition = _rb.position;
             Vector2 dir = (_target - currentPosition).normalized;
-
             _rb.linearVelocity = dir * speed;
 
-            // Fermati se sei vicino abbastanza
             if (Vector2.Distance(currentPosition, _target) < 0.1f)
             {
                 _rb.linearVelocity = Vector2.zero;

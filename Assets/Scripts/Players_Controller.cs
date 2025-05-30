@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class Players_Controller : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    TopDownMovement _mover;
+    public bool _isSelected = false;
+
+    void Awake()
     {
-        
+        _mover = GetComponent<TopDownMovement>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0) && _isSelected)
+        {
+            Vector3 mouseScreenPos = Input.mousePosition;
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+            Vector2 target = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+            _mover.MoveTo(target);
+        }
     }
 }
