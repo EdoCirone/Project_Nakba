@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: e143cc94ba0033b47a25552f718c811f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 97272857848695837
+    second: Moschea danneggiata in toni sepia_0
+  - first:
+      213: -9108096264393843937
+    second: Moschea danneggiata in toni sepia_1
+  - first:
+      213: -8930053934133785814
+    second: Moschea danneggiata in toni sepia_2
+  - first:
+      213: 7741614533488414580
+    second: Moschea danneggiata in toni sepia_3
+  - first:
+      213: 1668717151812737003
+    second: Moschea danneggiata in toni sepia_4
+  - first:
+      213: 6946345485749236305
+    second: Moschea danneggiata in toni sepia_5
+  - first:
+      213: 6322074740500229637
+    second: Moschea danneggiata in toni sepia_6
+  - first:
+      213: -5450349709456036184
+    second: Moschea danneggiata in toni sepia_7
+  - first:
+      213: 3564857598018815809
+    second: Moschea danneggiata in toni sepia_8
+  - first:
+      213: 97472142010017193
+    second: Moschea danneggiata in toni sepia_9
+  - first:
+      213: 9159139801060341196
+    second: Moschea danneggiata in toni sepia_10
+  - first:
+      213: -3369384126879294448
+    second: Moschea danneggiata in toni sepia_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 95
+  spriteBorder: {x: 0, y: 139, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 208
+        width: 772
+        height: 761
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ccb5a1625995100800000000000000
+      internalID: 97272857848695837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_1
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 335
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b1ebc44ba899180800000000000000
+      internalID: -9108096264393843937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 303
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b40e6a243121480800000000000000
+      internalID: -8930053934133785814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 291
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f0490c66dbf6b60800000000000000
+      internalID: 7741614533488414580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 251
+        width: 74
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be756688869782710800000000000000
+      internalID: 1668717151812737003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 213
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152b83d7a60666060800000000000000
+      internalID: 6946345485749236305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_6
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 260
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e6cfe0b758cb750800000000000000
+      internalID: 6322074740500229637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 193
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae283201d77c54b0800000000000000
+      internalID: -5450349709456036184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 88
+        width: 111
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14783c4191be87130800000000000000
+      internalID: 3564857598018815809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_9
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 172
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5e000956a4a5100800000000000000
+      internalID: 97472142010017193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 195
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5f7523f1dcb1f70800000000000000
+      internalID: 9159139801060341196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moschea danneggiata in toni sepia_11
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 189
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c15850dfa8d31d0800000000000000
+      internalID: -3369384126879294448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Moschea danneggiata in toni sepia_0: 97272857848695837
+      Moschea danneggiata in toni sepia_1: -9108096264393843937
+      Moschea danneggiata in toni sepia_10: 9159139801060341196
+      Moschea danneggiata in toni sepia_11: -3369384126879294448
+      Moschea danneggiata in toni sepia_2: -8930053934133785814
+      Moschea danneggiata in toni sepia_3: 7741614533488414580
+      Moschea danneggiata in toni sepia_4: 1668717151812737003
+      Moschea danneggiata in toni sepia_5: 6946345485749236305
+      Moschea danneggiata in toni sepia_6: 6322074740500229637
+      Moschea danneggiata in toni sepia_7: -5450349709456036184
+      Moschea danneggiata in toni sepia_8: 3564857598018815809
+      Moschea danneggiata in toni sepia_9: 97472142010017193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
