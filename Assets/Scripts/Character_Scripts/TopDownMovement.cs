@@ -5,6 +5,7 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField] float speed = 5f;
     Rigidbody2D _rb;
     Vector2 _target;
+    public Vector2 Dir { get; private set; }
     bool _isMoving = false;
 
     void Awake()
@@ -23,8 +24,8 @@ public class TopDownMovement : MonoBehaviour
         if (_isMoving)
         {
             Vector2 currentPosition = _rb.position;
-            Vector2 dir = (_target - currentPosition).normalized;
-            _rb.linearVelocity = dir * speed;
+            Dir = (_target - currentPosition).normalized;
+            _rb.linearVelocity = Dir * speed;
 
             if (Vector2.Distance(currentPosition, _target) < 0.1f)
             {

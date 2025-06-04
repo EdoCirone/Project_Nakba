@@ -4,7 +4,7 @@ public class Players_Controller : MonoBehaviour
 {
     TopDownMovement _mover;
 
-    void Awake()
+    void Start()
     {
         _mover = GetComponent<TopDownMovement>();
     }
@@ -14,7 +14,7 @@ public class Players_Controller : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mouseScreenPos = Input.mousePosition;
-            mouseScreenPos.z = 10f; // distanza fittizia dalla camera per calcolo corretto
+            mouseScreenPos.z = 10f; 
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
             Vector2 target = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
             _mover.MoveTo(target);
