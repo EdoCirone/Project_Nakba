@@ -17,9 +17,11 @@ public class Selectable : MonoBehaviour
     }
 
     public void Select()
-    {
-        Selectable[] allSelectables = FindObjectsOfType<Selectable>();
+    {      
+        if (isSelected) return;
 
+        Selectable[] allSelectables = FindObjectsByType<Selectable>(FindObjectsSortMode.None);
+    
         foreach (Selectable sel in allSelectables)
         {
             if (sel != this)
@@ -31,7 +33,6 @@ public class Selectable : MonoBehaviour
         isSelected = true;
         UpdateControlState();
     }
-
     public void Deselect()
     {
         isSelected = false;

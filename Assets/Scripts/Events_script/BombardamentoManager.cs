@@ -26,10 +26,9 @@ public class BombardamentoManager : MonoBehaviour
 
     void BombardaUnEdificio()
     {
-        Bombardabile[] tutti = FindObjectsOfType<Bombardabile>();
         List<Bombardabile> validi = new List<Bombardabile>();
 
-        foreach (var b in tutti)
+        foreach (var b in validi)
         {
             if (!b.isBombed)
                 validi.Add(b);
