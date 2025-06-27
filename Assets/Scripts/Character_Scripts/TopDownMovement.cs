@@ -38,4 +38,10 @@ public class TopDownMovement : MonoBehaviour
             _rb.linearVelocity = Vector2.zero;
         }
     }
+
+    public void Stop()
+    {
+        _rb.linearVelocity = Vector2.zero;
+        _isMoving = false;
+    }
 }

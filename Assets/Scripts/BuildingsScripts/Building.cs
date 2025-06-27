@@ -14,13 +14,15 @@ public abstract class Building : MonoBehaviour, IContextProvider
     private Collider2D _collider;
     private Transform _player;
 
+    private GameObject obstacleCollider;
+
     void Awake()
     {
         _collider = GetComponent<Collider2D>();
-        // Non più necessario salvare il riferimento una volta sola
+        obstacleCollider = transform.Find("ObstacleCollider")?.gameObject;
     }
 
-        void Update()
+    void Update()
     {
         if (_collider == null) return;
 
@@ -30,14 +32,19 @@ public abstract class Building : MonoBehaviour, IContextProvider
             float playerY = selected.transform.position.y;
             float buildingY = transform.position.y;
 
-            // Se il player è SOPRA (y > building.y), allora passa dietro → disattiva collider
-            _collider.enabled = playerY < buildingY;
+            // Solo se la differenza di Y è abbastanza grande, evita rimbalzi
+            if (Mathf.Abs(playerY - buildingY) > 0.1f)
+            {
+                _collider.enabled = playerY < buildingY;
+            }
         }
         else
         {
-            _collider.enabled = true; // Nessun personaggio selezionato → abilita collider
+            _collider.enabled = true;
         }
     }
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

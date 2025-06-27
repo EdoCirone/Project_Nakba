@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 public class Well : Building
@@ -7,7 +7,7 @@ public class Well : Building
 
     public override void OnPlayerEnter(GameObject player)
     {
-        // Vuoto per ora
+        // Il pozzo non ha un comportamento di "ingresso", quindi lasciamo vuoto
     }
 
     public override List<ContextAction> GetContextActions(GameObject player)
@@ -15,6 +15,15 @@ public class Well : Building
         return new List<ContextAction>
         {
             new ContextAction("Bevi", p => p.GetComponent<Bisogni>()?.Bevi(100)),
-            new ContextAction("Raccogli acqua", p => Object.FindAnyObjectByType<FamilyInventory>()?.Add("water", waterAmount))        };
+            new ContextAction("Raccogli acqua", p =>
+            {
+                var inventory = Object.FindAnyObjectByType<FamilyInventory>();
+                if (inventory != null)
+                {
+                    inventory.Add("water", waterAmount);
+                    Debug.Log($"{p.name} ha raccolto {waterAmount} acqua.");
+                }
+            })
+        };
     }
 }
