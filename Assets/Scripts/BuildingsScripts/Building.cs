@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -10,6 +10,34 @@ public abstract class Building : MonoBehaviour, IContextProvider
 
     protected List<GameObject> occupants = new List<GameObject>();
     public bool IsOccupied => occupants.Count > 0;
+
+    private Collider2D _collider;
+    private Transform _player;
+
+    void Awake()
+    {
+        _collider = GetComponent<Collider2D>();
+        // Non più necessario salvare il riferimento una volta sola
+    }
+
+        void Update()
+    {
+        if (_collider == null) return;
+
+        var selected = Selectable.Selected;
+        if (selected != null)
+        {
+            float playerY = selected.transform.position.y;
+            float buildingY = transform.position.y;
+
+            // Se il player è SOPRA (y > building.y), allora passa dietro → disattiva collider
+            _collider.enabled = playerY < buildingY;
+        }
+        else
+        {
+            _collider.enabled = true; // Nessun personaggio selezionato → abilita collider
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -54,6 +82,5 @@ public abstract class Building : MonoBehaviour, IContextProvider
 
     public abstract void OnPlayerEnter(GameObject player);
 
-    // Metodo richiesto dall'interfaccia IContextProvider
     public abstract List<ContextAction> GetContextActions(GameObject player);
 }
