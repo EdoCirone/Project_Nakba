@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 
 public class Selectable : MonoBehaviour
 {
     [SerializeField] bool isSelected = false;
     Players_Controller _playerControl;
+    public static event Action<Selectable> OnSelectableClicked;
+
+
 
     void Awake()
     {
@@ -14,14 +18,16 @@ public class Selectable : MonoBehaviour
     void OnMouseDown()
     {
         Select();
+        OnSelectableClicked?.Invoke(this); // notifica il CameraController
     }
 
+
     public void Select()
-    {      
+    {
         if (isSelected) return;
 
         Selectable[] allSelectables = FindObjectsByType<Selectable>(FindObjectsSortMode.None);
-    
+
         foreach (Selectable sel in allSelectables)
         {
             if (sel != this)

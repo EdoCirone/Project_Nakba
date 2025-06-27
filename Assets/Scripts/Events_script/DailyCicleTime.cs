@@ -21,7 +21,10 @@ public class DailyCicleTime : MonoBehaviour
 
     [Header("Saturazione per fase")]
     [SerializeField] private float saturationDawn = 0.2f;
+    [SerializeField] private float saturationMorning = 0.2f;
     [SerializeField] private float saturationDay = 0.6f;
+    [SerializeField] private float saturationAfternoon = 0.2f; 
+    [SerializeField] private float saturationEvening = 0.2f;
     [SerializeField] private float saturationNight = 0.05f;
 
     [Header("Luminosità (Value) per fase")]
@@ -72,16 +75,16 @@ public class DailyCicleTime : MonoBehaviour
         return phase switch
         {
             DayPhase.Dawn => saturationDawn,
-            DayPhase.Morning => 0.4f,
+            DayPhase.Morning => saturationMorning,
             DayPhase.Daytime => saturationDay,
-            DayPhase.Afternoon => 0.5f,
-            DayPhase.Evening => 0.25f,
+            DayPhase.Afternoon => saturationAfternoon,
+            DayPhase.Evening => saturationEvening,
             DayPhase.Night => saturationNight,
             _ => 0.3f,
         };
     }
 
-    float GetValueForPhase(DayPhase phase)
+    float GetValueForPhase(DayPhase phase) //luminosità (Value) per fase
     {
         return phase switch
         {
