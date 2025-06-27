@@ -1,15 +1,14 @@
 using UnityEngine;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider2D))]
-public abstract class Building : MonoBehaviour
+public abstract class Building : MonoBehaviour, IContextProvider
 {
     [SerializeField] protected float recoveryTime = 100f;
     [SerializeField] protected Vector2 exitOffset = new Vector2(1f, 0f);
 
     protected List<GameObject> occupants = new List<GameObject>();
-
     public bool IsOccupied => occupants.Count > 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,7 +40,7 @@ public abstract class Building : MonoBehaviour
         foreach (var p in occupants)
         {
             if (p != null)
-                Destroy(p); // O p.GetComponent<Vita>().Muori();
+                Destroy(p); // oppure p.GetComponent<Vita>()?.Muori();
         }
 
         occupants.Clear();
@@ -54,4 +53,7 @@ public abstract class Building : MonoBehaviour
     }
 
     public abstract void OnPlayerEnter(GameObject player);
+
+    // Metodo richiesto dall'interfaccia IContextProvider
+    public abstract List<ContextAction> GetContextActions(GameObject player);
 }

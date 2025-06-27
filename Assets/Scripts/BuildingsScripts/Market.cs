@@ -1,17 +1,21 @@
 using UnityEngine;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+using System.Collections.Generic;
 
 public class Market : Building
-
 {
     [SerializeField] float amount = 100;
 
     public override void OnPlayerEnter(GameObject player)
     {
-        Bisogni bisogni = player.GetComponent<Bisogni>();
-        bisogni.Mangia(amount);
+        var bisogni = player.GetComponent<Bisogni>();
+        bisogni?.Mangia(amount);
+    }
+
+    public override List<ContextAction> GetContextActions(GameObject player)
+    {
+        return new List<ContextAction>
+        {
+            new ContextAction("Compra cibo", p => p.GetComponent<Bisogni>()?.Mangia(amount))
+        };
+    }
 }
-
-}
-
-

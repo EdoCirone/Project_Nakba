@@ -5,9 +5,9 @@ public class Selectable : MonoBehaviour
 {
     [SerializeField] bool isSelected = false;
     Players_Controller _playerControl;
+
     public static event Action<Selectable> OnSelectableClicked;
-
-
+    public static Selectable Selected { get; private set; }
 
     void Awake()
     {
@@ -18,30 +18,32 @@ public class Selectable : MonoBehaviour
     void OnMouseDown()
     {
         Select();
-        OnSelectableClicked?.Invoke(this); // notifica il CameraController
+        OnSelectableClicked?.Invoke(this); // notifica altri sistemi
     }
-
 
     public void Select()
     {
         if (isSelected) return;
 
         Selectable[] allSelectables = FindObjectsByType<Selectable>(FindObjectsSortMode.None);
-
         foreach (Selectable sel in allSelectables)
         {
             if (sel != this)
-            {
                 sel.Deselect();
-            }
         }
 
         isSelected = true;
+        Selected = this;
         UpdateControlState();
     }
+
     public void Deselect()
     {
         isSelected = false;
+
+        if (Selected == this)
+            Selected = null;
+
         UpdateControlState();
     }
 
