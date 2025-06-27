@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3765156012219962462}
   - component: {fileID: 6075367033157882200}
   m_Layer: 0
-  m_Name: bombManager
+  m_Name: bombSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,8 +47,9 @@ MonoBehaviour:
   bombPrefab:
   - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
   - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
+  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
   spawnInterval: 2
   spawnSound: {fileID: 8300000, guid: 0f9886b85b32cb74b8885ca64fa01cf2, type: 3}
   maxBomb: 10
-  spawnAreaMin: {x: -10, y: -5}
-  spawnAreaMax: {x: 10, y: 5}
+  spawnAreaMin: {x: -5, y: -5}
+  spawnAreaMax: {x: 5, y: 5}
