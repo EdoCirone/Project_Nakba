@@ -4,9 +4,9 @@ public class BombEvent : Event
 {
     [Header("Prefab del BombManager da spawnare")]
     public GameObject bombManagerPrefab;
-
     public override void Trigger()
     {
+
         base.Trigger();
 
         if (bombManagerPrefab == null)
