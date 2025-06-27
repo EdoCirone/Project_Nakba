@@ -204,7 +204,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234112724}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79377a429f1c1e4f915334e0f635a9f, type: 3}
   m_Name: 
@@ -224,7 +224,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cd5464e5bd5194e9cbb5d2e1cc182b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePerPhase: 10
+  timePerPhase: 5
+  globalLight: {fileID: 619394801}
+  hue: 0.6
+  transitionDuration: 1
+  saturationDawn: 0.5
+  saturationDay: 0.2
+  saturationNight: 0.8
+  valueDawn: 0.8
+  valueDay: 1
+  valueNight: 0.4
 --- !u!1 &238426389
 GameObject:
   m_ObjectHideFlags: 0
