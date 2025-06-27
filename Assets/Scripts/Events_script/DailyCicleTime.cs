@@ -32,10 +32,20 @@ public class DailyCicleTime : MonoBehaviour
     [SerializeField] private float valueDay = 1f;
     [SerializeField] private float valueNight = 0.25f;
 
+    [Header("Contatore dei giorni")]
+    [SerializeField] private int currentDay = 1;
+    [SerializeField] private DayPhase firstPhase = DayPhase.Dawn;
+
+    public static event Action<int> OnDayChanged;
+    public int CurrentDay => currentDay;
+
+    public static DailyCicleTime Instance { get; private set; }
+
     private Coroutine transitionCoroutine;
 
     void Start()
     {
+        currentDay = PlayerPrefs.GetInt("SavedDay", 1);
         NotifyPhaseChange();
     }
 
@@ -52,7 +62,21 @@ public class DailyCicleTime : MonoBehaviour
 
     void AdvancePhase()
     {
-        CurrentPhase = (DayPhase)(((int)CurrentPhase + 1) % Enum.GetNames(typeof(DayPhase)).Length);
+        DayPhase nextPhase = (DayPhase)(((int)CurrentPhase + 1) % Enum.GetNames(typeof(DayPhase)).Length);
+
+
+        if (nextPhase == firstPhase)
+        {
+            currentDay++;
+            PlayerPrefs.SetInt("SavedDay", currentDay); 
+            PlayerPrefs.Save();
+
+            Debug.Log("Nuovo giorno: " + currentDay);
+            OnDayChanged?.Invoke(currentDay); 
+        }
+
+
+        CurrentPhase = nextPhase;
         NotifyPhaseChange();
     }
 
