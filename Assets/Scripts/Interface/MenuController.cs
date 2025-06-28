@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        menu.SetActive(false);
+        menu.SetActive(menuActive);
     }
 
     // Update is called once per frame
@@ -15,10 +15,7 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            menu.SetActive(!menuActive);
-        }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
+            menuActive = !menuActive;
             menu.SetActive(menuActive);
         }
 
