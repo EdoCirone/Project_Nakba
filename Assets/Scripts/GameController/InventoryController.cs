@@ -11,20 +11,20 @@ public class InventoryController : MonoBehaviour
     public GameObject[] itemPrefab;
     private ItemDictionary itemDictionary;
 
-    
+
     void Start()
     {
         itemDictionary = FindAnyObjectByType<ItemDictionary>();
 
     }
-    
+
     public List<InventorySaveData> GetInventoryItems()
     {
         List<InventorySaveData> invData = new List<InventorySaveData>();
         foreach (Transform slotTransform in inventoryPanel.transform)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
-            if(slot.currentItem != null)
+            if (slot.currentItem != null)
             {
                 Item item = slot.currentItem.GetComponent<Item>();
                 invData.Add(new InventorySaveData { itemID = item.ID, slotIndex = slotTransform.GetSiblingIndex() });
@@ -32,6 +32,27 @@ public class InventoryController : MonoBehaviour
         }
         return invData;
     }
+
+    public bool AddItem(GameObject itemPrefab)
+    {
+        foreach (Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot != null && slot.currentItem == null)
+            {
+                GameObject newItem = Instantiate(itemPrefab, slotTransform);
+                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = newItem;
+                return true;
+            }
+
+        }
+     
+        Debug.Log("Inventario pieno");
+        return false;
+
+    }
+
     public void SetInventoryItem(List<InventorySaveData> inventorySaves)
     {
         foreach (Transform child in inventoryPanel.transform)
@@ -44,9 +65,9 @@ public class InventoryController : MonoBehaviour
             Instantiate(slotPrefab, inventoryPanel.transform);
         }
 
-        foreach( InventorySaveData data in inventorySaves )
+        foreach (InventorySaveData data in inventorySaves)
         {
-            if(data.slotIndex < slotCount)
+            if (data.slotIndex < slotCount)
             {
                 Slot slot = inventoryPanel.transform.GetChild(data.slotIndex).GetComponent<Slot>();
                 GameObject itemPrefab = itemDictionary.GetItemPrefab(data.itemID);

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1943278675321141347}
   - component: {fileID: 6916871406671298343}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Item_Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 691208078040396310, guid: f088e0f2cbf580f47856fc9ea25f5c01, type: 3}
+  m_Sprite: {fileID: -6341799272604088064, guid: 32ecf276db78b5647bd71d175fd0813b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

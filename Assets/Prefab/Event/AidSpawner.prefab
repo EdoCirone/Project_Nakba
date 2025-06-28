@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7259529853471291610
+--- !u!1 &1711407414091921101
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3765156012219962462}
-  - component: {fileID: 6075367033157882200}
+  - component: {fileID: 4178009765267765188}
+  - component: {fileID: 5779514556697145098}
   m_Layer: 0
-  m_Name: bombSpawner
+  m_Name: AidSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3765156012219962462
+--- !u!4 &4178009765267765188
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7259529853471291610}
+  m_GameObject: {fileID: 1711407414091921101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3, y: 17.1, z: -0.0755791}
+  m_LocalPosition: {x: 10.480852, y: 1.3673079, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6075367033157882200
+--- !u!114 &5779514556697145098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7259529853471291610}
+  m_GameObject: {fileID: 1711407414091921101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c002045d318577409ced73e1bc66a73, type: 3}
+  m_Script: {fileID: 11500000, guid: 95e8c27bc3aeb3840a0cf1d79773f5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombPrefab:
-  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
-  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
-  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
+  aidPrefab:
+  - {fileID: 3659451879470588361, guid: 938a25f4a97621445a950dcdf453f76e, type: 3}
   spawnInterval: 2
   spawnSound: {fileID: 8300000, guid: 340983c685096384ea4555b34762a86f, type: 3}
-  maxBomb: 10
-  spawnAreaMin: {x: -5, y: 10}
-  spawnAreaMax: {x: 5, y: 10}
+  maxAid: 10
+  spawnAreaMin: {x: -10, y: 10}
+  spawnAreaMax: {x: 10, y: 10}
