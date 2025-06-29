@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -5938156056306151892}
   m_Layer: 0
   m_Name: InfestationEvent
-  m_TagString: OggettiEvento
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,5 +47,5 @@ MonoBehaviour:
   eventName: Infestazione
   description: il vento trasporta sostanze tossiche prodotte dalla devastazione cittadina
   icon: {fileID: 0}
-  associatedPhase: 3
+  associatedPhase: 1
   infestationSpawner: {fileID: 5783870093074402419, guid: 32eaa14af40847f4c8cce2f4cdc346c1, type: 3}

@@ -23,7 +23,7 @@ public class Soldier : MonoBehaviour
         life = GetComponent<LifeController>();
         anim = GetComponent<Animator>();
 
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        GameObject playerObj = GameObject.FindGameObjectWithTag("TargetPoint");
         if (playerObj != null)
         {
             player = playerObj.transform;
@@ -37,7 +37,7 @@ public class Soldier : MonoBehaviour
     {
         if (player != null)
         {
-            MoveTowardsPlayer();
+            MoveTowardsTarget();
             //Animate();
 
         }
@@ -45,7 +45,7 @@ public class Soldier : MonoBehaviour
 
     }
 
-    void MoveTowardsPlayer()
+    void MoveTowardsTarget()
     {
         Vector2 currentPos = transform.position;
         Vector2 targetPos = player.position;
@@ -60,13 +60,14 @@ public class Soldier : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
 
-            LifeController lifeController = collision.collider.GetComponent<LifeController>();
+            collision.transform.SetParent(transform);
+            //LifeController lifeController = collision.collider.GetComponent<LifeController>();
 
-            if (lifeController != null)
-            {
+            //if (lifeController != null)
+            //{
 
-                lifeController.AddHp(-1);
-            }
+            //    lifeController.AddHp(-1);
+            //}
         }
 
         //if (collision.collider.CompareTag("Bullet"))

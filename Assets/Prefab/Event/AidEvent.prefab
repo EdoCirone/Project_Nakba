@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3667166994550831535}
   m_Layer: 0
   m_Name: AidEvent
-  m_TagString: OggettiEvento
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,5 +47,5 @@ MonoBehaviour:
   eventName: Aiuti Umanitari
   description: 'Aiuti Umanitari arrivano dal cielo '
   icon: {fileID: 0}
-  associatedPhase: 2
+  associatedPhase: 0
   aidSpawner: {fileID: 1711407414091921101, guid: 122da737d5a3e79408828c49256dc4f1, type: 3}
