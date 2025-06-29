@@ -8,6 +8,7 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         menu.SetActive(menuActive);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -17,6 +18,15 @@ public class MenuController : MonoBehaviour
         {
             menuActive = !menuActive;
             menu.SetActive(menuActive);
+
+            if (menuActive)
+            {
+                Time.timeScale = 0f; 
+            }
+            else
+            {
+                Time.timeScale = 1f; 
+            }
         }
 
     }
