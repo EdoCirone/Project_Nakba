@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1132369243081625388
+--- !u!1 &1160018575588593821
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7275196716130586758}
-  - component: {fileID: 7079004614829992195}
+  - component: {fileID: 1033739843007778170}
+  - component: {fileID: 4648041210343561280}
   m_Layer: 0
   m_Name: BombEvent
   m_TagString: Untagged
@@ -17,35 +17,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7275196716130586758
+--- !u!4 &1033739843007778170
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132369243081625388}
+  m_GameObject: {fileID: 1160018575588593821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9098144, y: -6.203021, z: -0.09915}
+  m_LocalPosition: {x: -0.8, y: 21, z: -0.11923867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7079004614829992195
+--- !u!114 &4648041210343561280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132369243081625388}
+  m_GameObject: {fileID: 1160018575588593821}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5746c3641b75763489c7ea2020fd6721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventName: Bombardamento
-  description: 'Hanno ordinato un attacco areo: Fuggite!'
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  associatedPhase: 3
-  bombManagerPrefab: {fileID: 7259529853471291610, guid: 48cb631471c81d74097b041e25ae8eb9, type: 3}
+  description: 
+  icon: {fileID: 0}
+  associatedPhase: 0
+  bombManagerPrefab: {fileID: 7259529853471291610, guid: cbe87c975ddfe944baa3414099136e90, type: 3}

@@ -47,5 +47,5 @@ MonoBehaviour:
   eventName: Raid
   description: 'Arrivano i Soldati '
   icon: {fileID: 0}
-  associatedPhase: 0
+  associatedPhase: 5
   raidSpawner: {fileID: 7259529853471291610, guid: 48cb631471c81d74097b041e25ae8eb9, type: 3}
