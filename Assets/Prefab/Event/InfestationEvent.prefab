@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7259529853471291610
+--- !u!1 &9375256513095510
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3765156012219962462}
-  - component: {fileID: 6075367033157882200}
+  - component: {fileID: 3714789368257076482}
+  - component: {fileID: -5938156056306151892}
   m_Layer: 0
-  m_Name: bombSpawner
-  m_TagString: Untagged
+  m_Name: InfestationEvent
+  m_TagString: OggettiEvento
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3765156012219962462
+--- !u!4 &3714789368257076482
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7259529853471291610}
+  m_GameObject: {fileID: 9375256513095510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3, y: 17.1, z: -0.0755791}
+  m_LocalPosition: {x: 1.8405935, y: -1.7116734, z: -0.036808856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6075367033157882200
+--- !u!114 &-5938156056306151892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7259529853471291610}
+  m_GameObject: {fileID: 9375256513095510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c002045d318577409ced73e1bc66a73, type: 3}
+  m_Script: {fileID: 11500000, guid: 32a6524fc3fcdc9498c44da2f87a780e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombPrefab:
-  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
-  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
-  - {fileID: 3871542318282472677, guid: 56daa115fb8d8954883b7096f28f7074, type: 3}
-  spawnInterval: 2
-  spawnSound: {fileID: 8300000, guid: 340983c685096384ea4555b34762a86f, type: 3}
-  maxBomb: 10
-  spawnAreaMin: {x: -5, y: 10}
-  spawnAreaMax: {x: 5, y: 10}
+  eventName: Infestazione
+  description: il vento trasporta sostanze tossiche prodotte dalla devastazione cittadina
+  icon: {fileID: 0}
+  associatedPhase: 3
+  infestationSpawner: {fileID: 5783870093074402419, guid: 32eaa14af40847f4c8cce2f4cdc346c1, type: 3}

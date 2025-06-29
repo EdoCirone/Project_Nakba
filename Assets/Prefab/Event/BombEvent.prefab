@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7079004614829992195}
   m_Layer: 0
   m_Name: BombEvent
-  m_TagString: Untagged
+  m_TagString: OggettiEvento
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,5 +47,5 @@ MonoBehaviour:
   eventName: Bombardamento
   description: 'Hanno ordinato un attacco areo: Fuggite!'
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  associatedPhase: 2
+  associatedPhase: 1
   bombManagerPrefab: {fileID: 7259529853471291610, guid: 48cb631471c81d74097b041e25ae8eb9, type: 3}

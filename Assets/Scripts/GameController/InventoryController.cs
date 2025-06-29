@@ -16,6 +16,13 @@ public class InventoryController : MonoBehaviour
     {
         itemDictionary = FindAnyObjectByType<ItemDictionary>();
 
+        if (inventoryPanel.transform.childCount == 0)
+        {
+            for (int i = 0; i < slotCount; i++)
+            {
+                Instantiate(slotPrefab, inventoryPanel.transform);
+            }
+        }
     }
 
     public List<InventorySaveData> GetInventoryItems()
@@ -41,7 +48,12 @@ public class InventoryController : MonoBehaviour
             if (slot != null && slot.currentItem == null)
             {
                 GameObject newItem = Instantiate(itemPrefab, slotTransform);
-                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                RectTransform rt = newItem.GetComponent<RectTransform>();
+                rt.anchorMin = new Vector2(0.5f, 0.5f);
+                rt.anchorMax = new Vector2(0.5f, 0.5f);
+                rt.pivot = new Vector2(0.5f, 0.5f);
+                rt.anchoredPosition = Vector2.zero;
+                rt.localScale = Vector3.one;
                 slot.currentItem = newItem;
                 return true;
             }

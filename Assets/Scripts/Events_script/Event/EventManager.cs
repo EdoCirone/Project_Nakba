@@ -10,6 +10,8 @@ public class EventManager : MonoBehaviour
     [Header("Eventi del giorno (uno per fase)")]
     public Dictionary<DayPhase, Event> EventsOfTheDay { get; private set; } = new();
 
+    private DayPhase? lastExecutedPhase = null;
+
     private void OnEnable()
     {
         DailyCicleTime.OnPhaseChanged += OnPhaseChanged;
@@ -49,6 +51,11 @@ public class EventManager : MonoBehaviour
 
     private void OnPhaseChanged(DayPhase newPhase)
     {
+        if (lastExecutedPhase == newPhase)
+            return;
+
+        lastExecutedPhase = newPhase;
+
         if (EventsOfTheDay.TryGetValue(newPhase, out Event evt))
         {
             evt.Trigger();
