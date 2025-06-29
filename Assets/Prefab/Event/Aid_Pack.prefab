@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIDs:
-  - {fileID: 6916871406671298343, guid: c795760106b822b4fbcffb0a3049a908, type: 3}
+  - {fileID: 5003418667640858483, guid: c795760106b822b4fbcffb0a3049a908, type: 3}
   fallSpeed: 2
   minStopTime: 1
   maxStopTime: 5

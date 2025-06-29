@@ -13,6 +13,15 @@ public class SpecialAid : Aid
 
     public GameObject[] dropItems;
 
+    public override void Update()
+    {
+        base.Update();
+        if(!isFalling)
+        {
+            DropItemsOnGround();
+        }
+    }
+
     public override void OnTriggerEnter2D(Collider2D other)
     {
         

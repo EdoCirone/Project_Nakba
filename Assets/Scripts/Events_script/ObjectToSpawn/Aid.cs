@@ -9,7 +9,7 @@ public class Aid : MonoBehaviour
     public float maxStopTime = 5f;
     public float lifeTime = 10f;
 
-    private bool isFalling = true;
+    protected bool isFalling = true;
     protected ItemDictionary itemDictionary;
 
     void Start()
@@ -26,7 +26,7 @@ public class Aid : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
-    void Update()
+    public virtual void Update()
     {
         if (isFalling)
         {
@@ -43,7 +43,7 @@ public class Aid : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            InventoryController playerInventory = other.GetComponent<InventoryController>();
+            InventoryController playerInventory = other.GetComponentInParent<InventoryController>();
 
             if (playerInventory != null && itemDictionary != null)
             {
