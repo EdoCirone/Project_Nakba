@@ -1,7 +1,6 @@
-using UnityEngine;
-using UnityEngine.Rendering;
+﻿using UnityEngine;
 
-enum warIntensity
+public enum WarIntensity
 {
     Low = 1,
     Medium = 2,
@@ -11,43 +10,52 @@ enum warIntensity
 
 public class WarIntensityController : MonoBehaviour
 {
-   [SerializeField] warIntensity currentIntensity = warIntensity.Low;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private WarIntensity currentIntensity = WarIntensity.Low;
+    [SerializeField] private float increaseInterval = 60f; // in secondi
+    private float timer;
+
     void Start()
     {
         ResetWarIntensity();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        IncreaseWarIntensity();
+        timer += Time.deltaTime;
+        if (timer >= increaseInterval)
+        {
+            IncreaseWarIntensity();
+            timer = 0f;
+        }
     }
 
     private void ResetWarIntensity()
     {
-        // Reset the war intensity to Low
-        currentIntensity = warIntensity.Low;
-        Debug.Log("War intensity reset to: " + currentIntensity);
+        currentIntensity = WarIntensity.Low;
+        Debug.Log("🔁 War intensity reset to: " + currentIntensity);
     }
 
-    private void SetWarIntensity(warIntensity newIntensity)
+    private void SetWarIntensity(WarIntensity newIntensity)
     {
-        // Set the war intensity to the specified level
         currentIntensity = newIntensity;
-        Debug.Log("War intensity set to: " + newIntensity);
+        Debug.Log("🛠️ War intensity set to: " + currentIntensity);
     }
 
     private void IncreaseWarIntensity()
     {
-        if (currentIntensity < warIntensity.Extreme)
+        if (currentIntensity < WarIntensity.Extreme)
         {
             currentIntensity++;
-            Debug.Log("War intensity increased to: " + currentIntensity);
+            Debug.Log("⚠️ War intensity increased to: " + currentIntensity);
         }
         else
         {
-            Debug.Log("War intensity is already at the maximum level: " + currentIntensity);
+            Debug.Log("🔥 War intensity is already at max: " + currentIntensity);
         }
+    }
+
+    public WarIntensity GetCurrentIntensity()
+    {
+        return currentIntensity;
     }
 }
