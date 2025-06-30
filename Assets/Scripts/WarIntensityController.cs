@@ -10,7 +10,7 @@ public enum WarIntensity
 
 public class WarIntensityController : MonoBehaviour
 {
-    public WarIntensity currentIntensity = WarIntensity.Low;
+    [SerializeField] private WarIntensity currentIntensity = WarIntensity.Low;
     [SerializeField] private float increaseInterval = 60f; // in secondi
     private float timer;
 
@@ -27,6 +27,12 @@ public class WarIntensityController : MonoBehaviour
             IncreaseWarIntensity();
             timer = 0f;
         }
+    }
+
+    public WarIntensity WarIntensity
+    {
+        get { return currentIntensity; }
+        set { SetWarIntensity(value); }
     }
 
     private void ResetWarIntensity()
