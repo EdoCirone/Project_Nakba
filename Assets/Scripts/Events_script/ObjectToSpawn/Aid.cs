@@ -8,6 +8,7 @@ public class Aid : MonoBehaviour
     public float minStopTime = 1f;
     public float maxStopTime = 5f;
     public float lifeTime = 10f;
+    public Transform position;
 
     protected bool isFalling = true;
     protected ItemDictionary itemDictionary;
