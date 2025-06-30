@@ -11,6 +11,7 @@ enum warIntensity
 
 public class WarIntensityController : MonoBehaviour
 {
+   [SerializeField] warIntensity currentIntensity = warIntensity.Low;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,20 +27,19 @@ public class WarIntensityController : MonoBehaviour
     private void ResetWarIntensity()
     {
         // Reset the war intensity to Low
-        warIntensity currentIntensity = warIntensity.Low;
+        currentIntensity = warIntensity.Low;
         Debug.Log("War intensity reset to: " + currentIntensity);
     }
 
     private void SetWarIntensity(warIntensity newIntensity)
     {
         // Set the war intensity to the specified level
+        currentIntensity = newIntensity;
         Debug.Log("War intensity set to: " + newIntensity);
     }
 
     private void IncreaseWarIntensity()
     {
-        // Increase the war intensity by one level
-        warIntensity currentIntensity = warIntensity.Low;
         if (currentIntensity < warIntensity.Extreme)
         {
             currentIntensity++;
