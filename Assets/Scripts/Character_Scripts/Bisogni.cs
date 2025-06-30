@@ -15,7 +15,7 @@ public class Bisogni : MonoBehaviour
     [Header("Degrado (punti al minuto)")]
     [SerializeField] float fameDecay = 2f;
     [SerializeField] float seteDecay = 3f;
-    [SerializeField] float saluteDecay = 1f;
+    //[SerializeField] float saluteDecay = 1f;
     [SerializeField] float moraleDecay = 1f;
     [SerializeField] float riposoDecay = 2f;
     [SerializeField] float fedeDecay = 0f; // 0 = la fede non cala da sola
