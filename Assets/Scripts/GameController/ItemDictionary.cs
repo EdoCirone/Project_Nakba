@@ -31,7 +31,7 @@ public class ItemDictionary : MonoBehaviour
     public GameObject GetItemPrefab(int itemID)
     {
         itemDictionary.TryGetValue(itemID, out GameObject prefab);
-        if(prefab != null)
+        if(prefab == null)
         {
             Debug.LogWarning($"Item with Id{itemID} NotOperator not found in dictionary");
         }

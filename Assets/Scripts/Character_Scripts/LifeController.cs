@@ -14,13 +14,13 @@ public class LifeController : MonoBehaviour
     }
 
     [SerializeField] private DeathAction onDeath = DeathAction.Destroy;
-    [SerializeField] private int maxHP = 100;
-    private int currentHP;
+    [SerializeField] private float maxHP = 100;
+    private float currentHP;
     public AudioClip deathSound;
     public HealthBar healthBar;
 
-    public int CurrentHP => currentHP;
-    public int MaxHP => maxHP;
+    public float CurrentHP => currentHP;
+    public float MaxHP => maxHP;
     public bool IsAlive => currentHP > 0;
 
     private void Awake()
@@ -29,7 +29,7 @@ public class LifeController : MonoBehaviour
         healthBar?.SetMaxHealth(maxHP);
     }
 
-    public int SetHp(int newHp)
+    public float SetHp(float newHp)
     {
         currentHP = Mathf.Clamp(newHp, 0, maxHP);
         healthBar?.SetHealth(currentHP);
@@ -42,7 +42,7 @@ public class LifeController : MonoBehaviour
         return currentHP;
     }
 
-    public int AddHp(int amount)
+    public float AddHp(float amount)
     {
         currentHP = Mathf.Clamp(currentHP + amount, 0, maxHP);
         healthBar?.SetHealth(currentHP);
