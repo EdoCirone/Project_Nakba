@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - OggettiEvento
   - TargetPoint
+  - MiniMap
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - Building
   - 
-  - 
+  - MiniMap
   - 
   - 
   - 
