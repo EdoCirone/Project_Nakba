@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class BasicUIManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject pauseMenu; // Reference to the pause menu UI
+    public void OnMenuPress()
     {
-        
+        pauseMenu.SetActive(true); // Show the pause menu
+        Debug.Log("Menu pressed. Pausing game.");
+        Time.timeScale = 0f; // Pause game time
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
 }

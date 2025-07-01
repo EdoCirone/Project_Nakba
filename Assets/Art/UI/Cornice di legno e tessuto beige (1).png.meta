@@ -119,20 +119,20 @@ TextureImporter:
       name: Cornice di legno e tessuto beige (1)_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 88
-        width: 436
-        height: 931
+        x: 64
+        y: 291
+        width: 434
+        height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c9f2ce94bd6160a80800000000000000
-      internalID: -8501082115521368164
+      spriteID: fbee56ea9d9b5c84683b006b8d5b2117
+      internalID: 1454714060
       vertices: []
       indices: 
       edges: []
@@ -141,20 +141,20 @@ TextureImporter:
       name: Cornice di legno e tessuto beige (1)_1
       rect:
         serializedVersion: 2
-        x: 555
-        y: 48
-        width: 404
-        height: 660
+        x: 540
+        y: 290
+        width: 434
+        height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eab9c731826e1fee0800000000000000
-      internalID: -1228948163495421010
+      spriteID: 00fdb2e90b34cd24dac80f6f88f478ef
+      internalID: 1614136241
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 81d54011b51aad949914130e6c0a225a
     internalID: 0
     vertices: []
     indices: 
@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cornice di legno e tessuto beige (1)_0: 1454714060
+      Cornice di legno e tessuto beige (1)_1: 1614136241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

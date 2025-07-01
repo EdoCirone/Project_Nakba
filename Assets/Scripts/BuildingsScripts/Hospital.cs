@@ -1,16 +1,14 @@
-using System.Collections.Generic;
-using System.Threading;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Mosque : Building
+public class Hospital : Building
 {
-    [SerializeField] float amount = 100;
+
+    [SerializeField] float _amount = 100;
 
     public override void OnPlayerEnter(GameObject player)
     {
-        Bisogni bisogni = player.GetComponent<Bisogni>();
-        bisogni.Prega(amount);
+        var _lifeController = player.GetComponent<LifeController>();
+       _lifeController.AddHp(_amount) ;
     }
     //public override List<ContextAction> GetContextActions(GameObject player)
     //{
@@ -21,3 +19,4 @@ public class Mosque : Building
     //}
 
 }
+

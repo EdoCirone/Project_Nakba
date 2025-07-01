@@ -124,7 +124,7 @@ TextureImporter:
         width: 801
         height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -142,11 +142,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 175
-        y: 88
+        y: 236
         width: 674
-        height: 349
+        height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2a84106fc44e899449d857ba87a5e3cc
     internalID: 0
     vertices: []
     indices: 
@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cornice e rettangolo beige rustico (1)_0: -7636895075451724298
+      Cornice e rettangolo beige rustico (1)_1: -953525857538785874
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

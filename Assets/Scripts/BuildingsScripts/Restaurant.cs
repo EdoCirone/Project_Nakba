@@ -1,21 +1,21 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class Well : Building
+public class Restaurant : Building
 {
-    [SerializeField] float _amount = 1;
+    [SerializeField] float _amount = 100;
 
     public override void OnPlayerEnter(GameObject player)
     {
         var bisogni = player.GetComponent<Bisogni>();
-        bisogni?.Bevi(_amount);
+        bisogni?.Mangia(_amount);
     }
 
     //public override List<ContextAction> GetContextActions(GameObject player)
     //{
     //    return new List<ContextAction>
     //    {
-    //        new ContextAction("Bevi", p => p.GetComponent<Bisogni>()?.Bevi(100)),
-    //        new ContextAction("Raccogli acqua", p => Object.FindAnyObjectByType<FamilyInventory>()?.Add("water", waterAmount))        };
+    //        new ContextAction("Compra cibo", p => p.GetComponent<Bisogni>()?.Mangia(amount))
+    //    };
     //}
 }

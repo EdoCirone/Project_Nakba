@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider2D))]
-public abstract class Building : MonoBehaviour, IContextProvider
+public abstract class Building : MonoBehaviour //IContextProvider
 {
     [SerializeField] protected float recoveryTime = 100f;
     [SerializeField] protected Vector2 exitOffset = new Vector2(1f, 0f);
@@ -14,31 +14,7 @@ public abstract class Building : MonoBehaviour, IContextProvider
     private Collider2D _collider;
     private Transform _player;
 
-    void Awake()
-    {
-        _collider = GetComponent<Collider2D>();
-        // Non più necessario salvare il riferimento una volta sola
-    }
-
-        void Update()
-    {
-        if (_collider == null) return;
-
-        var selected = Selectable.Selected;
-        if (selected != null)
-        {
-            float playerY = selected.transform.position.y;
-            float buildingY = transform.position.y;
-
-            // Se il player è SOPRA (y > building.y), allora passa dietro → disattiva collider
-            _collider.enabled = playerY < buildingY;
-        }
-        else
-        {
-            _collider.enabled = true; // Nessun personaggio selezionato → abilita collider
-        }
-    }
-
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -82,5 +58,5 @@ public abstract class Building : MonoBehaviour, IContextProvider
 
     public abstract void OnPlayerEnter(GameObject player);
 
-    public abstract List<ContextAction> GetContextActions(GameObject player);
+    //public abstract List<ContextAction> GetContextActions(GameObject player);
 }
