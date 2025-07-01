@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: f8a651cac08d6f34383de43275a6539d
+guid: b0a893a7b21b4784fa7e934746f8b2c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6164812636869910253
-    second: Figura religiosa in stile minimalista_0
-  - first:
-      213: 909343910576542381
-    second: Figura religiosa in stile minimalista_1
-  - first:
-      213: 7457165279980901256
-    second: Figura religiosa in stile minimalista_2
-  - first:
-      213: 8930915375849283592
-    second: Figura religiosa in stile minimalista_3
+      213: -1408437573596956881
+    second: TitleScreen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Figura religiosa in stile minimalista_0
+      name: TitleScreen_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 400
-        width: 531
-        height: 619
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dee587f3e60dd8550800000000000000
-      internalID: 6164812636869910253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Figura religiosa in stile minimalista_1
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 32
-        width: 467
-        height: 449
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da254900873ae9c00800000000000000
-      internalID: 909343910576542381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Figura religiosa in stile minimalista_2
-      rect:
-        serializedVersion: 2
-        x: 539
-        y: 39
-        width: 379
-        height: 442
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88353a8ff4c2d7760800000000000000
-      internalID: 7457165279980901256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Figura religiosa in stile minimalista_3
-      rect:
-        serializedVersion: 2
-        x: 580
-        y: 392
-        width: 442
-        height: 619
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8002290673cf0fb70800000000000000
-      internalID: 8930915375849283592
+      spriteID: f27b0713d79347ce0800000000000000
+      internalID: -1408437573596956881
       vertices: []
       indices: 
       edges: []
@@ -222,11 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Figura religiosa in stile minimalista_0: 6164812636869910253
-      Figura religiosa in stile minimalista_1: 909343910576542381
-      Figura religiosa in stile minimalista_2: 7457165279980901256
-      Figura religiosa in stile minimalista_3: 8930915375849283592
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

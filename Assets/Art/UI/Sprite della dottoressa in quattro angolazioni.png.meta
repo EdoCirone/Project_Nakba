@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite della dottoressa in quattro angolazioni_0: -3267921199849345527
+      Sprite della dottoressa in quattro angolazioni_1: -5810684691126989377
+      Sprite della dottoressa in quattro angolazioni_2: -5589182243863583595
+      Sprite della dottoressa in quattro angolazioni_3: -1859822713568238811
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

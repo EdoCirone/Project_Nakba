@@ -65,6 +65,20 @@ public class InventoryController : MonoBehaviour
 
     }
 
+    public void ResetInventory()
+    {
+        
+        foreach (Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot != null && slot.currentItem != null)
+            {
+                Destroy(slot.currentItem);
+                slot.currentItem = null;
+            }
+        }
+    }
+
     public void SetInventoryItem(List<InventorySaveData> inventorySaves)
     {
         foreach (Transform child in inventoryPanel.transform)

@@ -7,6 +7,8 @@ public class Save : MonoBehaviour
     private GameObject player;
     private InventoryController inventoryController;
 
+    private const string NewGameFlag = "IsNewGame";
+
     void Start()
     {
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
@@ -14,10 +16,35 @@ public class Save : MonoBehaviour
         
         player = GameObject.FindWithTag("Family");
 
+        bool isNewGame = PlayerPrefs.GetInt(NewGameFlag, 0) == 1;
+
         if (player != null)
         {
-            LoadGame();
+            if (isNewGame)
+            {
+               
+                CreateNewSave();
+            }
+            else
+            {
+                LoadGame();
+            }
         }
+    }
+
+    private void CreateNewSave()
+    {
+        
+        player.transform.position = Vector3.zero; 
+
+        
+        if (inventoryController != null)
+        {
+            inventoryController.ResetInventory();
+        }
+
+       
+        SaveGame();
     }
 
     public void SaveGame()
@@ -44,7 +71,7 @@ public class Save : MonoBehaviour
         }
         else
         {
-            SaveGame(); 
+            CreateNewSave(); 
         }
     }
 }

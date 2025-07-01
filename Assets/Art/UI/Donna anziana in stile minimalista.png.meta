@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Donna anziana in stile minimalista_0: 912019056627997045
+      Donna anziana in stile minimalista_1: 4521443993161178668
+      Donna anziana in stile minimalista_2: 1219486774016218289
+      Donna anziana in stile minimalista_3: -1636600144258033285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

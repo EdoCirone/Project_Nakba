@@ -45,5 +45,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sfondo
+    uniqueID: 3690547779
+    locked: 0
+  - name: Bottoni
+    uniqueID: 890063359
+    locked: 0
+  - name: Testo
+    uniqueID: 2967868477
+    locked: 0
   m_RenderingLayers:
   - Default
