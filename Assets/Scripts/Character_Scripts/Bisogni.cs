@@ -61,13 +61,19 @@ public class Bisogni : MonoBehaviour
     public bool ÈInPericolo() =>
         fame <= 0 || sete <= 0 || morale <= 0 || riposo <= 0;
 
-    public void HealtLose( float lifeDebuff)
+    public void HealtLose(float lifeDebuff)
     {
-        if ( ÈInPericolo() && _lifeController != null)
+        if (ÈInPericolo() && _lifeController != null)
         {
             // Degrada salute se in pericolo
             _lifeController.AddHp(-lifeDebuff * delta); // Perdita di 10 HP
         }
+    }
+
+    public void ApplySadnessEffect(float moraleMultiplier)
+    {
+        morale -= moraleDecay * moraleMultiplier * (Time.deltaTime / 60f);
+        morale = Mathf.Clamp(morale, 0, 100);
     }
 
 

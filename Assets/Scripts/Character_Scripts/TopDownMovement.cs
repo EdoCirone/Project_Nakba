@@ -7,16 +7,29 @@ public class TopDownMovement : MonoBehaviour
     Vector2 _target;
     public Vector2 Dir { get; private set; }
     bool _isMoving = false;
+    private float originalSpeed;
+    public float BaseSpeed => speed;
 
-    void Awake()
+    public void OverrideSpeed(float newSpeed)
     {
-        _rb = GetComponent<Rigidbody2D>();
+        speed = newSpeed;
     }
 
     public void MoveTo(Vector2 target)
     {
         _target = target;
         _isMoving = true;
+    }
+
+    public void ResetSpeed()
+    {
+        speed = originalSpeed;
+    }
+
+    void Awake()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+        originalSpeed = speed;
     }
 
     void FixedUpdate()
@@ -38,4 +51,5 @@ public class TopDownMovement : MonoBehaviour
             _rb.linearVelocity = Vector2.zero;
         }
     }
+
 }
