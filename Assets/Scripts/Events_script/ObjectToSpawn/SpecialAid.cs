@@ -3,7 +3,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SpecialAid : Aid
 {
-   
+
     public int damageAmount = 10;
 
     public string groundTag = "Ground";
@@ -13,10 +13,13 @@ public class SpecialAid : Aid
 
     public GameObject[] dropItems;
 
+    private bool hasDropped = false;
+
+
     public override void Update()
     {
         base.Update();
-        if(!isFalling)
+        if (!isFalling)
         {
             DropItemsOnGround();
         }
@@ -24,8 +27,8 @@ public class SpecialAid : Aid
 
     public override void OnTriggerEnter2D(Collider2D other)
     {
-        
-       
+
+
         if (other.CompareTag(playerTag) || other.CompareTag(npcTag))
         {
             LifeController healthComponent = other.GetComponent<LifeController>();
@@ -45,9 +48,11 @@ public class SpecialAid : Aid
 
     private void DropItemsOnGround()
     {
+        if (hasDropped) return; // Evita drop multipli
+        hasDropped = true;
+
         if (dropItems == null || dropItems.Length == 0)
         {
-    
             if (itemIDs != null && itemIDs.Length > 0 && itemDictionary != null)
             {
                 foreach (Item id in itemIDs)
@@ -59,7 +64,7 @@ public class SpecialAid : Aid
                     }
                     else
                     {
-                        Debug.LogWarning($"Item con ID '{id}' non trovato nell'ItemDictionary.");
+                        Debug.LogWarning($"Item con ID '{id.ID}' non trovato nell'ItemDictionary.");
                     }
                 }
             }

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Barra di progresso vuota pittorica_0: -7277362935281861666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

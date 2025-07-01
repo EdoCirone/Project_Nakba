@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,12 +125,12 @@ TextureImporter:
       name: Sprite della dottoressa in quattro angolazioni_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 75
         y: 0
-        width: 539
+        width: 332
         height: 494
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Sprite della dottoressa in quattro angolazioni_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 496
-        width: 423
-        height: 528
+        x: 81
+        y: 503
+        width: 334
+        height: 521
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Sprite della dottoressa in quattro angolazioni_2
       rect:
         serializedVersion: 2
-        x: 467
-        y: 384
-        width: 555
-        height: 640
+        x: 589
+        y: 510
+        width: 309
+        height: 514
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Sprite della dottoressa in quattro angolazioni_3
       rect:
         serializedVersion: 2
-        x: 579
+        x: 596
         y: 0
-        width: 435
+        width: 310
         height: 493
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f69669c8bc921bb4aadd2b0559774202
     internalID: 0
     vertices: []
     indices: 
