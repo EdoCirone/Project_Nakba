@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cornice di legno e tessuto beige (1)_0: -8501082115521368164
+      Cornice di legno e tessuto beige (1)_1: -1228948163495421010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
