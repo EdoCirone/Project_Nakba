@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b0a893a7b21b4784fa7e934746f8b2c7
+guid: 657290a2f89d8f1459537d8596d07e29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1408437573596956881
-    second: TitleScreen_0
+      213: -8501082115521368164
+    second: Cornice di legno e tessuto beige (1)_0
+  - first:
+      213: -1228948163495421010
+    second: Cornice di legno e tessuto beige (1)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TitleScreen_0
+      name: Cornice di legno e tessuto beige (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 63
+        y: 88
+        width: 436
+        height: 931
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f27b0713d79347ce0800000000000000
-      internalID: -1408437573596956881
+      spriteID: c9f2ce94bd6160a80800000000000000
+      internalID: -8501082115521368164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cornice di legno e tessuto beige (1)_1
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 48
+        width: 404
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab9c731826e1fee0800000000000000
+      internalID: -1228948163495421010
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      TitleScreen_0: -1408437573596956881
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
