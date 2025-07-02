@@ -19,6 +19,12 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         canvasGroup.alpha = 0.6f; 
     }
 
+    private Aid sourceContainer;
+
+    public void SetSourceContainer(Aid container)
+    {
+        sourceContainer = container;
+    }
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position; 

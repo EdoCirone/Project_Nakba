@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Timeline.Actions.MenuPriority;
 
@@ -8,13 +9,16 @@ public class Aid : MonoBehaviour
     public float minStopTime = 1f;
     public float maxStopTime = 5f;
     public float lifeTime = 10f;
-    public Transform position;
-
+    [SerializeField] private GameObject menu;
+    [SerializeField] private Slot[] itemSlots;
     protected bool isFalling = true;
     protected ItemDictionary itemDictionary;
 
-    void Start()
+    private bool itemAlreadyMoved = false;
+
+    public virtual void Start()
     {
+      
         float stopTime = Random.Range(minStopTime, maxStopTime);
         Invoke(nameof(StopFalling), stopTime);
         
@@ -42,27 +46,65 @@ public class Aid : MonoBehaviour
 
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
+
+        if (itemDictionary == null) return;
+
         if (other.CompareTag("Player"))
         {
+            menu.SetActive(true);
+
             InventoryController playerInventory = other.GetComponentInParent<InventoryController>();
 
-            if (playerInventory != null && itemDictionary != null)
+            List<Item> chosenItems = GetRandomItems(itemIDs, 3);
+
+            for (int i = 0; i < chosenItems.Count && i < itemSlots.Length; i++)
             {
-                foreach (Item id in itemIDs)
+                Item item = chosenItems[i];
+                Slot targetSlot = itemSlots[i];
+
+                GameObject prefab = itemDictionary.GetItemPrefab(item.ID);
+                if (prefab != null)
                 {
-                    GameObject prefab = itemDictionary.GetItemPrefab(id.ID);
-                    if (prefab != null)
+                    GameObject instance = Instantiate(prefab, targetSlot.transform);
+                    instance.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+                    ItemDragHandler dragHandler = instance.GetComponent<ItemDragHandler>();
+                    if (dragHandler != null)
                     {
-                        playerInventory.AddItem(prefab);
+                        dragHandler.SetSourceContainer(this);
                     }
-                    else
-                    {
-                        Debug.LogWarning($"Item con ID '{id}' non trovato nell'ItemDictionary.");
-                    }
+
+                    targetSlot.currentItem = instance;
+                }
+                else
+                {
+                    Debug.LogWarning($"Item con ID '{item.ID}' non trovato nell'ItemDictionary.");
                 }
             }
-
             Destroy(gameObject);
         }
     }
+    private List<Item> GetRandomItems(Item[] array, int count)
+    {
+        List<Item> result = new List<Item>();
+        List<Item> pool = new List<Item>(array);
+
+        for (int i = 0; i < count && pool.Count > 0; i++)
+        {
+            int index = Random.Range(0, pool.Count);
+            result.Add(pool[index]);
+            pool.RemoveAt(index);
+        }
+
+        return result;
+    }
+
+    public void NotifyItemMoved()
+    {
+        if (itemAlreadyMoved) return;
+
+        itemAlreadyMoved = true;
+        Destroy(gameObject); 
+    }
+
 }
