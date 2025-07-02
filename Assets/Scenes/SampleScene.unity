@@ -8238,6 +8238,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4382984227828752440, guid: 41ca52635dbe1e04f89d1e59f19a17ef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382984227828752440, guid: 41ca52635dbe1e04f89d1e59f19a17ef, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 105
       objectReference: {fileID: 0}
@@ -9045,6 +9049,10 @@ PrefabInstance:
       propertyPath: blueprintDanneggiato
       value: 
       objectReference: {fileID: 2267699057348102032, guid: 91066495c620ddb42aa1aaca4893ad05, type: 3}
+    - target: {fileID: 8068780015154095463, guid: 41ca52635dbe1e04f89d1e59f19a17ef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
