@@ -1,3 +1,5 @@
+using Unity.VisualScripting.Antlr3.Runtime;
+using UnityEditor;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
@@ -15,7 +17,19 @@ public class SpecialAid : Aid
 
     private bool hasDropped = false;
 
+    public override void Start()
+    {
+        float stopTime = Random.Range(minStopTime, maxStopTime);
+        Invoke(nameof(StopFalling), stopTime);
 
+        itemDictionary = FindAnyObjectByType<ItemDictionary>();
+        if (itemDictionary == null)
+        {
+            Debug.LogError("ItemDictionary non trovato nella scena!");
+        }
+
+        Destroy(gameObject, lifeTime);
+    }
     public override void Update()
     {
         base.Update();
@@ -25,25 +39,39 @@ public class SpecialAid : Aid
         }
     }
 
+    void StopFalling()
+    {
+        isFalling = false;
+    }
+
     public override void OnTriggerEnter2D(Collider2D other)
     {
 
-
-        if (other.CompareTag(playerTag) || other.CompareTag(npcTag))
-        {
-            LifeController healthComponent = other.GetComponent<LifeController>();
-            if (healthComponent != null)
-            {
-                healthComponent.AddHp(-damageAmount);
-            }
-            Destroy(gameObject);
-            return;
-        }
-
         if (other.CompareTag("Player"))
         {
-            base.OnTriggerEnter2D(other);
+
+            InventoryController playerInventory = other.GetComponentInParent<InventoryController>();
+
+
+            if (playerInventory != null && itemDictionary != null)
+            {
+                foreach (Item id in itemIDs)
+                {
+                    GameObject prefab = itemDictionary.GetItemPrefab(id.ID);
+                    if (prefab != null)
+                    {
+                        playerInventory.AddItem(prefab);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Item con ID '{id}' non trovato nell'ItemDictionary.");
+                    }
+                }
+            }
+       
+            Destroy(gameObject);
         }
+
     }
 
     private void DropItemsOnGround()
