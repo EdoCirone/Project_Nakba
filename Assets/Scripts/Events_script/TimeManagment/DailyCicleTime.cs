@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 public class DailyCicleTime : MonoBehaviour
 {
     [Header("Durata di ogni fase (in secondi)")]
-    public float timePerPhase = 10f;
+    [SerializeField] private float timePerPhase = 10f;
     private float timer;
 
     public DayPhase CurrentPhase { get; private set; } = DayPhase.Dawn;

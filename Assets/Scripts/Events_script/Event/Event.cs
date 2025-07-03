@@ -4,12 +4,13 @@ using UnityEngine;
 
 public abstract class Event: MonoBehaviour
 {
-    public string eventName;
-    public string description;
-    public Sprite icon;
-    public DayPhase associatedPhase;
+    [SerializeField] public string eventName { get; set; }
+    [SerializeField] string description;
+    [SerializeField] Sprite icon;
+    public DayPhase associatedPhase; 
     public virtual void Trigger()
     {
         Debug.Log(eventName);
     }
+
 }
