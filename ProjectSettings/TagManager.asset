@@ -9,6 +9,7 @@ TagManager:
   - OggettiEvento
   - TargetPoint
   - MiniMap
+  - AidMenu
   layers:
   - Default
   - TransparentFX

@@ -11,11 +11,11 @@ public class Water : Item, IPointerClickHandler
     {
         if (eventData.button == 0)
         {
-            Bisogni eat = Selectable.Selected.GetComponent<Bisogni>();
-            if (eat != null)
+            Bisogni drink = Selectable.Selected.GetComponent<Bisogni>();
+            if (drink != null)
             {
-                eat.Bevi(satisfaction);
-                Debug.Log("Pane usato su " + eat.gameObject.name);
+                drink.Bevi(satisfaction);
+                Debug.Log("Pane usato su " + drink.gameObject.name);
             }
         }
     }

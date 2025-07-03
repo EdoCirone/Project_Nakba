@@ -5,6 +5,12 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
+    private Aid sourceContainer;
+
+    public void SetSourceContainer(Aid source)
+    {
+        sourceContainer = source;
+    }
 
     void Start()
     {
@@ -17,13 +23,6 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         transform.SetParent(transform.root); 
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f; 
-    }
-
-    private Aid sourceContainer;
-
-    public void SetSourceContainer(Aid container)
-    {
-        sourceContainer = container;
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -70,6 +69,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             transform.SetParent(originalParent);
         }
 
-        GetComponent<RectTransform>().anchoredPosition = Vector2.zero; 
+        GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+        sourceContainer?.NotifyItemMoved();
     }
 }

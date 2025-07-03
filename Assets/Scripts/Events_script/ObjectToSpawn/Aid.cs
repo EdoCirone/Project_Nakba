@@ -1,27 +1,47 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Timeline.Actions.MenuPriority;
 
 public class Aid : MonoBehaviour
 {
-    public Item[] itemIDs; 
+    public Item[] itemIDs;
     public float fallSpeed = 2f;
     public float minStopTime = 1f;
     public float maxStopTime = 5f;
     public float lifeTime = 10f;
-    [SerializeField] private GameObject menu;
+    private GameObject menu;
+
     [SerializeField] private Slot[] itemSlots;
+    
+
     protected bool isFalling = true;
     protected ItemDictionary itemDictionary;
 
     private bool itemAlreadyMoved = false;
+    private bool hasTriggered = false;
 
+    private void Awake()
+    {
+        menu = GameObject.FindWithTag("AidMenu");
+        
+        if (menu == null)
+        {
+            Debug.LogError("GameObject con tag 'AidMenu' non trovato!");
+            return;
+      
+        }
+
+
+        menu.SetActive(false);
+        Time.timeScale = 1f;
+    }
     public virtual void Start()
     {
-      
+       
+
         float stopTime = Random.Range(minStopTime, maxStopTime);
         Invoke(nameof(StopFalling), stopTime);
-        
+
         itemDictionary = FindAnyObjectByType<ItemDictionary>();
         if (itemDictionary == null)
         {
@@ -44,23 +64,34 @@ public class Aid : MonoBehaviour
         isFalling = false;
     }
 
-    public virtual void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (itemDictionary == null) return;
+        if (hasTriggered) return;
 
         if (other.CompareTag("Player"))
         {
-            menu.SetActive(true);
+            hasTriggered = true;
+            OpenMenu();
+        }
+    }
 
-            InventoryController playerInventory = other.GetComponentInParent<InventoryController>();
+    private void OpenMenu()
+    {
+        if (menu == null || itemDictionary == null) return;
 
-            List<Item> chosenItems = GetRandomItems(itemIDs, 3);
+        menu.SetActive(true);
+        Time.timeScale = 0f;
 
+        InventoryController playerInventory = GameObject.FindWithTag("Player")?.GetComponentInParent<InventoryController>();
+        List<Item> chosenItems = GetRandomItems(itemIDs, 3);
+
+        if (menu.transform.childCount == 0)
+        {
             for (int i = 0; i < chosenItems.Count && i < itemSlots.Length; i++)
             {
                 Item item = chosenItems[i];
-                Slot targetSlot = itemSlots[i];
+                Slot targetSlot = Instantiate(itemSlots[i],menu.transform).GetComponent<Slot>();
+
 
                 GameObject prefab = itemDictionary.GetItemPrefab(item.ID);
                 if (prefab != null)
@@ -71,7 +102,7 @@ public class Aid : MonoBehaviour
                     ItemDragHandler dragHandler = instance.GetComponent<ItemDragHandler>();
                     if (dragHandler != null)
                     {
-                        dragHandler.SetSourceContainer(this);
+                        dragHandler.SetSourceContainer(this); // Permette il callback NotifyItemMoved
                     }
 
                     targetSlot.currentItem = instance;
@@ -81,9 +112,27 @@ public class Aid : MonoBehaviour
                     Debug.LogWarning($"Item con ID '{item.ID}' non trovato nell'ItemDictionary.");
                 }
             }
-            Destroy(gameObject);
         }
     }
+
+    public void NotifyItemMoved()
+    {
+        if (itemAlreadyMoved) return;
+
+        itemAlreadyMoved = true;
+        CloseMenu();
+        Destroy(gameObject);
+    }
+
+    private void CloseMenu()
+    {
+        if (menu != null)
+        {
+            menu.SetActive(false);
+            Time.timeScale = 1f;
+        }
+    }
+
     private List<Item> GetRandomItems(Item[] array, int count)
     {
         List<Item> result = new List<Item>();
@@ -98,13 +147,4 @@ public class Aid : MonoBehaviour
 
         return result;
     }
-
-    public void NotifyItemMoved()
-    {
-        if (itemAlreadyMoved) return;
-
-        itemAlreadyMoved = true;
-        Destroy(gameObject); 
-    }
-
 }

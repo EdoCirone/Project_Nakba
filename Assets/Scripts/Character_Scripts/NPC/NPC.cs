@@ -113,11 +113,11 @@ public class NPC : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if (other.GetComponent<SpecialAid>())
-        {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
+        //if (other.GetComponent<SpecialAid>())
+        //{
+           // Destroy(other.gameObject);
+            //Destroy(gameObject);
+        //}
     }
 }
 
