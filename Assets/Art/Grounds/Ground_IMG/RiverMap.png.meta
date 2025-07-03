@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: b4aeb724562ff81498e4e8b34c419795
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1498014835409789542
+    second: RiverMap_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RiverMap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d522ba17bf53be0800000000000000
+      internalID: -1498014835409789542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1342
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95da91bc62af6894eb8ad37a6b4a22bd
+      internalID: -966480493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1342
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8269a4ace5085df47b2f8f257221ab1d
+      internalID: -824458638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1342
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0828c4c7e3c714cadd6724620439d2
+      internalID: 1125859423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1342
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f4932fe6a7d824ba26053f48dd473d
+      internalID: -1171852623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4c0366f873f0442a7726f5bf924666
+      internalID: -1065309153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1148
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20946325ae4203a4089b949e6cc6e00e
+      internalID: -1333298890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1148
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b704fe18217c1884e90db4d496b4d5fb
+      internalID: 254849282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1148
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f80b3841dfa7074ba032f24f8a91349
+      internalID: -1470990930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1148
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85949921b16ebe4f8afcf9a12e37349
+      internalID: 222092832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76d4cd7b74542f47921473436ee12e1
+      internalID: -1237355292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 954
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2314f43af2daa654ab751e1612c2a857
+      internalID: 1867852350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 954
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20605d8793d8ba04d90daad36481b0d8
+      internalID: 929449044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 954
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea3c2b046f681f469db3dd1a074479b
+      internalID: -196932442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 954
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cfbfcce8dbfc74eba6e2ad6b207f76
+      internalID: -1846519786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d00b8f2bd94d664192dd28bd46fb7d3
+      internalID: 1227473440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 760
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34e69a169e00644aa20ceefab9ba09c
+      internalID: -987179659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 760
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea380537faaa5e4ca2288458d76180e
+      internalID: 1348986315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 760
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f22c15443e6b4c44aa4d634f1bec6fb
+      internalID: 1874089986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 760
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6175440936599499c11a2591cb5478
+      internalID: -2127539426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 566
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae46d4e13b03ad44b579b9a8ecf6785
+      internalID: -834103537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 566
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171deb3403dabb64d8e4146c8f2387ac
+      internalID: -663473236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 566
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e841e84041a98c43b2ffda0c5bbe6ce
+      internalID: 1821909274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_23
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 566
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffe344f1c034f941beaa516db4fced6
+      internalID: 496316738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 566
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5ee4a326983a3469c9f6bc694b063e
+      internalID: 1423977883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01a90a78767c984ab1265b5545d172c
+      internalID: -1845998152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 372
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6802cc8f17cda1a4882a18c2dcebf7f2
+      internalID: -982342606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 372
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809c317bcbccf8c4793005edde8266cc
+      internalID: -1828887974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 372
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5504a1e89e6b4b64abc140d59faa90cf
+      internalID: -722756605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 372
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c2d084e2716404883b793e7d4d0901
+      internalID: 192822898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 178
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65efdb575ff390f4a8c02fdc6b8f85f3
+      internalID: 159921239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 178
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e24c8487890cc45995b20646c56aee
+      internalID: 442327576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 178
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4203e9d4e70d0409a82300ee841b65
+      internalID: 1029104429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_33
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 178
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651ab6978d5b2304880d583e8c2167ae
+      internalID: 295570502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverMap_34
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 178
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e460447a828d14780f54bbeb1866da
+      internalID: 737942382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cfe1779c2ef589d4980023ec88752656
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RiverMap_0: -1498014835409789542
+      RiverMap_1: -966480493
+      RiverMap_10: -1237355292
+      RiverMap_11: 1867852350
+      RiverMap_12: 929449044
+      RiverMap_13: -196932442
+      RiverMap_14: -1846519786
+      RiverMap_15: 1227473440
+      RiverMap_16: -987179659
+      RiverMap_17: 1348986315
+      RiverMap_18: 1874089986
+      RiverMap_19: -2127539426
+      RiverMap_2: -824458638
+      RiverMap_20: -834103537
+      RiverMap_21: -663473236
+      RiverMap_22: 1821909274
+      RiverMap_23: 496316738
+      RiverMap_24: 1423977883
+      RiverMap_25: -1845998152
+      RiverMap_26: -982342606
+      RiverMap_27: -1828887974
+      RiverMap_28: -722756605
+      RiverMap_29: 192822898
+      RiverMap_3: 1125859423
+      RiverMap_30: 159921239
+      RiverMap_31: 442327576
+      RiverMap_32: 1029104429
+      RiverMap_33: 295570502
+      RiverMap_34: 737942382
+      RiverMap_4: -1171852623
+      RiverMap_5: -1065309153
+      RiverMap_6: -1333298890
+      RiverMap_7: 254849282
+      RiverMap_8: -1470990930
+      RiverMap_9: 222092832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

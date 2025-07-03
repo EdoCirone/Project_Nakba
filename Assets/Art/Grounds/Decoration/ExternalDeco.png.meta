@@ -1,0 +1,604 @@
+fileFormatVersion: 2
+guid: 49851011bb009b44191cfdcca85d3837
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 297634423280871059
+    second: ExternalDeco_0
+  - first:
+      213: -1075531255037803520
+    second: ExternalDeco_1
+  - first:
+      213: -337361439473644921
+    second: ExternalDeco_2
+  - first:
+      213: 4340163069752112710
+    second: ExternalDeco_3
+  - first:
+      213: 7578870016103787645
+    second: ExternalDeco_4
+  - first:
+      213: 7243775609778885833
+    second: ExternalDeco_5
+  - first:
+      213: -6853547003754950030
+    second: ExternalDeco_6
+  - first:
+      213: -2929130536883099352
+    second: ExternalDeco_7
+  - first:
+      213: 4774965961281788465
+    second: ExternalDeco_8
+  - first:
+      213: 8955976346618772873
+    second: ExternalDeco_9
+  - first:
+      213: 6884933067286063040
+    second: ExternalDeco_10
+  - first:
+      213: -8192458936048457650
+    second: ExternalDeco_11
+  - first:
+      213: -2214895292408186253
+    second: ExternalDeco_12
+  - first:
+      213: 5117383279653001033
+    second: ExternalDeco_13
+  - first:
+      213: 5547740995379253118
+    second: ExternalDeco_14
+  - first:
+      213: 3461413345854207034
+    second: ExternalDeco_15
+  - first:
+      213: 1856438490179027198
+    second: ExternalDeco_16
+  - first:
+      213: 6905858712375370239
+    second: ExternalDeco_17
+  - first:
+      213: 3897064405305384569
+    second: ExternalDeco_18
+  - first:
+      213: -424099529220169876
+    second: ExternalDeco_19
+  - first:
+      213: -6675537122791403444
+    second: ExternalDeco_20
+  - first:
+      213: 3250421546722352231
+    second: ExternalDeco_21
+  - first:
+      213: -8641049756165340276
+    second: ExternalDeco_22
+  - first:
+      213: 5701911108382110318
+    second: ExternalDeco_23
+  - first:
+      213: 4954010303130115561
+    second: ExternalDeco_24
+  - first:
+      213: 1994819771854471579
+    second: ExternalDeco_25
+  - first:
+      213: 4650494833057502979
+    second: ExternalDeco_26
+  - first:
+      213: -6963841005510326969
+    second: ExternalDeco_27
+  - first:
+      213: 4546430922895895237
+    second: ExternalDeco_28
+  - first:
+      213: 4920595955116372049
+    second: ExternalDeco_29
+  - first:
+      213: 2810187281553770468
+    second: ExternalDeco_30
+  - first:
+      213: -4298488392721743331
+    second: ExternalDeco_31
+  - first:
+      213: -643245730244628898
+    second: ExternalDeco_32
+  - first:
+      213: -1670215370950340735
+    second: ExternalDeco_33
+  - first:
+      213: -7715283039856163716
+    second: ExternalDeco_34
+  - first:
+      213: 9098447548019187875
+    second: ExternalDeco_35
+  - first:
+      213: 6459845791288026044
+    second: ExternalDeco_36
+  - first:
+      213: -2546481514444645675
+    second: ExternalDeco_37
+  - first:
+      213: -344980763040949356
+    second: ExternalDeco_38
+  - first:
+      213: -3379364236520644499
+    second: ExternalDeco_39
+  - first:
+      213: 6513445748229342883
+    second: ExternalDeco_40
+  - first:
+      213: 1141647166078761510
+    second: ExternalDeco_41
+  - first:
+      213: 3386160556299390260
+    second: ExternalDeco_42
+  - first:
+      213: -3802126538213854892
+    second: ExternalDeco_43
+  - first:
+      213: -6938766109883509555
+    second: ExternalDeco_44
+  - first:
+      213: -845464678699380771
+    second: ExternalDeco_45
+  - first:
+      213: 1592543769015825115
+    second: ExternalDeco_46
+  - first:
+      213: -519673436008278992
+    second: ExternalDeco_47
+  - first:
+      213: -3332379084382094058
+    second: ExternalDeco_48
+  - first:
+      213: 4949121412308891676
+    second: ExternalDeco_49
+  - first:
+      213: 6533661176327975588
+    second: ExternalDeco_50
+  - first:
+      213: 2209817938619429103
+    second: ExternalDeco_51
+  - first:
+      213: 721251755437627151
+    second: ExternalDeco_52
+  - first:
+      213: -5356358813009572636
+    second: ExternalDeco_53
+  - first:
+      213: 2717977477999716380
+    second: ExternalDeco_54
+  - first:
+      213: 2598286687276685754
+    second: ExternalDeco_55
+  - first:
+      213: 1096210851417405086
+    second: ExternalDeco_56
+  - first:
+      213: -5477938243537617044
+    second: ExternalDeco_57
+  - first:
+      213: 5823288008606292217
+    second: ExternalDeco_58
+  - first:
+      213: 242483770003334218
+    second: ExternalDeco_59
+  - first:
+      213: -5133889490273874470
+    second: ExternalDeco_60
+  - first:
+      213: 124370212589082395
+    second: ExternalDeco_61
+  - first:
+      213: 7434909622088242057
+    second: ExternalDeco_62
+  - first:
+      213: 1999463791674369869
+    second: ExternalDeco_63
+  - first:
+      213: 4560628544157531630
+    second: ExternalDeco_64
+  - first:
+      213: 2930231870559153970
+    second: ExternalDeco_65
+  - first:
+      213: -1618796403513952482
+    second: ExternalDeco_66
+  - first:
+      213: -2707127605585851560
+    second: ExternalDeco_67
+  - first:
+      213: 6833260115124319589
+    second: ExternalDeco_68
+  - first:
+      213: -4438951173973056411
+    second: ExternalDeco_69
+  - first:
+      213: -8964487958224925016
+    second: ExternalDeco_70
+  - first:
+      213: -754109265384077281
+    second: ExternalDeco_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExternalDeco_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1030
+        width: 279
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396a5985ee8612400800000000000000
+      internalID: 297634423280871059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_6
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1032
+        width: 279
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2725ebdcf4f43e0a0800000000000000
+      internalID: -6853547003754950030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_28
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1031
+        width: 309
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caaf0b16da281f30800000000000000
+      internalID: 4546430922895895237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_46
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 798
+        width: 221
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd23379ce1ad91610800000000000000
+      internalID: 1592543769015825115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_50
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 487
+        width: 245
+        height: 253
+      alignment: 9
+      pivot: {x: 0.4925963, y: 0.12722911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a23ac9193a3caa50800000000000000
+      internalID: 6533661176327975588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_51
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 746
+        width: 197
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe072b105b9daae10800000000000000
+      internalID: 2209817938619429103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_52
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 269
+        width: 179
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f079c7476a6620a00800000000000000
+      internalID: 721251755437627151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_55
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 301
+        width: 239
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9d0cbc9f7fe0420800000000000000
+      internalID: 2598286687276685754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExternalDeco_62
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 202
+        width: 167
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98314b1d8ea1e2760800000000000000
+      internalID: 7434909622088242057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aca32937b0dbc0c4e90526b7248048f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ExternalDeco_0: 297634423280871059
+      ExternalDeco_1: -1075531255037803520
+      ExternalDeco_10: 6884933067286063040
+      ExternalDeco_11: -8192458936048457650
+      ExternalDeco_12: -2214895292408186253
+      ExternalDeco_13: 5117383279653001033
+      ExternalDeco_14: 5547740995379253118
+      ExternalDeco_15: 3461413345854207034
+      ExternalDeco_16: 1856438490179027198
+      ExternalDeco_17: 6905858712375370239
+      ExternalDeco_18: 3897064405305384569
+      ExternalDeco_19: -424099529220169876
+      ExternalDeco_2: -337361439473644921
+      ExternalDeco_20: -6675537122791403444
+      ExternalDeco_21: 3250421546722352231
+      ExternalDeco_22: -8641049756165340276
+      ExternalDeco_23: 5701911108382110318
+      ExternalDeco_24: 4954010303130115561
+      ExternalDeco_25: 1994819771854471579
+      ExternalDeco_26: 4650494833057502979
+      ExternalDeco_27: -6963841005510326969
+      ExternalDeco_28: 4546430922895895237
+      ExternalDeco_29: 4920595955116372049
+      ExternalDeco_3: 4340163069752112710
+      ExternalDeco_30: 2810187281553770468
+      ExternalDeco_31: -4298488392721743331
+      ExternalDeco_32: -643245730244628898
+      ExternalDeco_33: -1670215370950340735
+      ExternalDeco_34: -7715283039856163716
+      ExternalDeco_35: 9098447548019187875
+      ExternalDeco_36: 6459845791288026044
+      ExternalDeco_37: -2546481514444645675
+      ExternalDeco_38: -344980763040949356
+      ExternalDeco_39: -3379364236520644499
+      ExternalDeco_4: 7578870016103787645
+      ExternalDeco_40: 6513445748229342883
+      ExternalDeco_41: 1141647166078761510
+      ExternalDeco_42: 3386160556299390260
+      ExternalDeco_43: -3802126538213854892
+      ExternalDeco_44: -6938766109883509555
+      ExternalDeco_45: -845464678699380771
+      ExternalDeco_46: 1592543769015825115
+      ExternalDeco_47: -519673436008278992
+      ExternalDeco_48: -3332379084382094058
+      ExternalDeco_49: 4949121412308891676
+      ExternalDeco_5: 7243775609778885833
+      ExternalDeco_50: 6533661176327975588
+      ExternalDeco_51: 2209817938619429103
+      ExternalDeco_52: 721251755437627151
+      ExternalDeco_53: -5356358813009572636
+      ExternalDeco_54: 2717977477999716380
+      ExternalDeco_55: 2598286687276685754
+      ExternalDeco_56: 1096210851417405086
+      ExternalDeco_57: -5477938243537617044
+      ExternalDeco_58: 5823288008606292217
+      ExternalDeco_59: 242483770003334218
+      ExternalDeco_6: -6853547003754950030
+      ExternalDeco_60: -5133889490273874470
+      ExternalDeco_61: 124370212589082395
+      ExternalDeco_62: 7434909622088242057
+      ExternalDeco_63: 1999463791674369869
+      ExternalDeco_64: 4560628544157531630
+      ExternalDeco_65: 2930231870559153970
+      ExternalDeco_66: -1618796403513952482
+      ExternalDeco_67: -2707127605585851560
+      ExternalDeco_68: 6833260115124319589
+      ExternalDeco_69: -4438951173973056411
+      ExternalDeco_7: -2929130536883099352
+      ExternalDeco_70: -8964487958224925016
+      ExternalDeco_71: -754109265384077281
+      ExternalDeco_72: -1460217402
+      ExternalDeco_8: 4774965961281788465
+      ExternalDeco_9: 8955976346618772873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
