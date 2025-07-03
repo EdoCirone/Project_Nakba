@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1f794c5a3fec79545b0d6c170e0a258b
+guid: 0113b324cc81f59429564f62485daaf0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6886366809225412869
-    second: Market_0
+      213: -3196820088954365611
+    second: MainHouse_0
+  - first:
+      213: 869402035273485472
+    second: MainHouse_1
+  - first:
+      213: -8441068640495486794
+    second: MainHouse_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 175
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Market_0
+      name: MainHouse_0
       rect:
         serializedVersion: 2
-        x: 135
-        y: 190
-        width: 754
-        height: 686
+        x: 3
+        y: 0
+        width: 1019
+        height: 1019
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfe341f5fd5be60a0800000000000000
-      internalID: -6886366809225412869
+      spriteID: 559da0b011d92a3d0800000000000000
+      internalID: -3196820088954365611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainHouse_1
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 447
+        width: 6
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac4a777b8cb01c00800000000000000
+      internalID: 869402035273485472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainHouse_2
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 352
+        width: 7
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8b39e4bcc4bda80800000000000000
+      internalID: -8441068640495486794
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Market_0: -6886366809225412869
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

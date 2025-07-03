@@ -503,6 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 252934961}
+  - component: {fileID: 252934962}
   m_Layer: 6
   m_Name: Buildings
   m_TagString: Untagged
@@ -528,6 +529,18 @@ Transform:
   - {fileID: 1847170553}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &252934962
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252934960}
+  m_Enabled: 1
+  m_SortingLayerID: 1761487939
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!4 &343094735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4328558301930839132, guid: 1831dc9a29a09be48b6eb0cd6525d124, type: 3}
@@ -25860,7 +25873,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000047952bf0434af9db432cfe68ff490d353d14e6b0
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
