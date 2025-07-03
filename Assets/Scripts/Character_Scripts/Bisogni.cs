@@ -8,9 +8,9 @@ public class Bisogni : MonoBehaviour
     [Range(0, 100)] public float fame = 100f;
     [Range(0, 100)] public float sete = 100f;
     [Range(0, 100)] public float salute = 100f;
-    [Range(0, 100)] public float morale = 100f;
+    [Range(0, 100)] public float morale = 100f; // morale anche, sarebbe meglio usare il teacher o altri eventi, ma non gli oggetti;
     [Range(0, 100)] public float riposo = 100f;
-    [Range(0, 100)] public float fede = 50f;
+    [Range(0, 100)] public float fede = 50f; // non possiamo usare oggetti per fede, però ci sta l'imam per questo;
 
     [Header("Degrado (punti al minuto)")]
     [SerializeField] float fameDecay = 2f;
