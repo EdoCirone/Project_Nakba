@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eed751f4f87ab6f4195ce2df1cfb5563
+guid: cd7acacebc5e29445aa8dbb17bce41bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7277362935281861666
-    second: Barra di progresso vuota pittorica_0
+      213: 464206127066122051
+    second: CoinIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barra di progresso vuota pittorica_0
+      name: CoinIcon_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 88
-        width: 866
-        height: 529
+        x: 21
+        y: 12
+        width: 326
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edb3eeca7fc910b90800000000000000
-      internalID: -7277362935281861666
+      spriteID: 347065a5301317600800000000000000
+      internalID: 464206127066122051
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Barra di progresso vuota pittorica_0: -7277362935281861666
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

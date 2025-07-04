@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 443b7f157bc0aca468b33f83f68d73e8
+guid: eed751f4f87ab6f4195ce2df1cfb5563
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -867171867098561829
-    second: Hospital_0
+      213: -7277362935281861666
+    second: Barra di progresso vuota pittorica_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hospital_0
+      name: Barra di progresso vuota pittorica_0
       rect:
         serializedVersion: 2
-        x: 160
-        y: 86
-        width: 829
-        height: 882
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 79
+        y: 386
+        width: 866
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd2c06608cf27f3f0800000000000000
-      internalID: -867171867098561829
+      spriteID: edb3eeca7fc910b90800000000000000
+      internalID: -7277362935281861666
       vertices: []
       indices: 
       edges: []
@@ -125,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: acb74fe6e80c34340a32ccb337c09c8e
+    spriteID: 6ab598fde44791040adeed67f7c26efd
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hospital_0: -867171867098561829
+      Barra di progresso vuota pittorica_0: -7277362935281861666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
