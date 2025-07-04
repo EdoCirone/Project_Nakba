@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GenericHouses_0: -4296837122503739364
+      GenericHouses_1: 2198596434366812809
+      GenericHouses_2: 2880910948415127675
+      GenericHouses_3: -1665514155841050454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
