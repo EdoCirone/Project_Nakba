@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AngoloTileMap_0: -7903834128465929661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

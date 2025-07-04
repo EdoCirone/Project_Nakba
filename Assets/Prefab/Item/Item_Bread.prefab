@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6284540471583926297}
   - component: {fileID: 6203024687231519279}
   - component: {fileID: 38024962926336102}
+  - component: {fileID: 8227311708325236433}
   m_Layer: 5
   m_Name: Item_Bread
   m_TagString: Untagged
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 635997179150587349, guid: c45230a2b98332148ae6a13cfa9aaa62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -104,3 +105,15 @@ MonoBehaviour:
   nome: Bread
   ID: 3
   satisfaction: 10
+--- !u!225 &8227311708325236433
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437624013125220740}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
