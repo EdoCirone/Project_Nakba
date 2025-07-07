@@ -13,7 +13,7 @@ public class Sedative : Item, IPointerClickHandler
     {
         if (eventData.button == 0)
         {
-            Bisogni eat = Selectable.Selected.GetComponent<Bisogni>();
+            Bisogni sleep = Selectable.Selected.GetComponent<Bisogni>();
             if (sleep != null)
             {
                 sleep.Dormi(satisfaction);
